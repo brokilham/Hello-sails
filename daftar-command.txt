@@ -1,0 +1,4 @@
+npm install sails -g (install sails secara global)
+sails new Hello-sails (create project sails)
+sails lift (running project sails)
+npm install -- save sails-mysql (install driver my sql)
