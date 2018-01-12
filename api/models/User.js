@@ -5,10 +5,22 @@
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
-module.exports = {
+/*module.exports = {
 
   attributes: {
 
+  }
+};*/ // bentuk awal sebelum di modifikasi
+
+module.exports = {
+
+  attributes: {
+  userName : {
+    type : 'string'		
+  },
+  password : {
+    type : 'string'
+  }
   }
 };
 
