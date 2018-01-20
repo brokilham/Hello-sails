@@ -32,9 +32,13 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  '/': {view: 'homepage'},
+  //'/landingpage': {view: 'dashboard/layout'},
+  'get /landingpage': 'DashboardController.index',
+
+  'get /login': 'LoginController.index',
+  'post /login': 'LoginController.handle_login',
+  //'get /landingpage':  'DashboardController.landingpage',
 
   /***************************************************************************
   *                                                                          *
