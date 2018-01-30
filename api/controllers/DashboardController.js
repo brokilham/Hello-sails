@@ -6,11 +6,25 @@
  */
 
 module.exports = {
-
     index : function(req, res){
-        // penjelasan  view dari content, dengan menggunakan layout.ejs
+        
+        Main_menu.find().populate('submenu').exec(function(error, responses){
+            
+            if(error){           
+                return res.ok('error bro');    
+            }
+            
+            //return res.json(responses);
+            return res.view('dashboard/content',{
+                layout:'dashboard/layout',
+                title : 'Brokilham',
+                MenuList : responses
+                
+            })
+           
+        });
 
-       Main_menu.find().exec(function(error, responses){
+        /*Main_menu.find().exec(function(error, responses){
                
             if(error){           
                 return res.ok('error bro');    
@@ -20,14 +34,26 @@ module.exports = {
 
             return res.view('dashboard/content',{
                 layout:'dashboard/layout',
-                Main_menu : Main_menu
+                title : 'Brokilham',
+                MenuList : responses
                
             })
            
-        }); 
-        
-       
+        }); */
+
     }
+       
+
+
+
+
+
+       
+
+
+
+
+   
 
      // konsep pemanggilan menu
     /*Route::get('/',function(){

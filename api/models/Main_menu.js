@@ -6,9 +6,18 @@
  */
 
 module.exports = {
-  attributes: {   
+  
+  attributes: { 
+    Id_mainmenu :{
+      type : 'string',	
+      primaryKey: true
+    },  
     Name : {      
       type : 'string'		    
+    },
+    submenu: { // submenu ini, nama array tampungan
+      collection: 'Sub_menu', // nama table sub_menu
+      via: 'Id_mainmenu'
     }   
   }
 };
