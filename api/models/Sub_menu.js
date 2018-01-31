@@ -15,6 +15,9 @@ module.exports = {
       Name_submenu : {      
         type : 'string'		    
       },
+      Controller_submenu : {      
+        type : 'string'		    
+      },
 
       // Id main menu adalah, primary key pada tabel Main_Menu.js
       // nanti otomatis kepanggail 

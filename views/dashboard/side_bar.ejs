@@ -20,8 +20,8 @@
                             <span class="arrow"></span>                              
                             <ul class="sub-menu">
                                 <% for(var j=0; j<MenuList[i].submenu.length; j++) {%>
-                                    <li class="nav-item">
-                                        <a href="index.html" class="nav-link ">
+                                    <li class="nav-item">                                      
+                                        <a href="/<%= MenuList[i].submenu[j].Controller_submenu %>" class="nav-link ">
                                             <i class="icon-bar-chart"></i>
                                             <span class="title"><%= MenuList[i].submenu[j].Name_submenu %></span>                                         
                                         </a>

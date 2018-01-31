@@ -39,7 +39,10 @@ module.exports.routes = {
   'get /login': 'LoginController.index',
   'post /login': 'LoginController.handle_login',
   //'get /landingpage':  'DashboardController.landingpage',
+  '/menu': 'SettingController.index',
 
+  '/user_list': 'AdministratorController.user_list',
+  '/acess_privilage': 'AdministratorController.access_privilage',
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
