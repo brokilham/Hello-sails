@@ -42,24 +42,6 @@ module.exports = {
         }); */
 
     }
-       
-
-
-
-
-
-       
-
-
-
-
-   
-
-     // konsep pemanggilan menu
-    /*Route::get('/',function(){
-		$categories = tbl_pages::with('children')->where('parent_id','=',0)->get();
-		return view('menu',['categories'=>$categories]);
-    });*/
 
     /*landingpage : function(req, res){
 
